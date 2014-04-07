@@ -101,6 +101,10 @@ minetest.register_node("trail:water_source_swam", {
 	end,
 })
 
+
+local mod_snow = minetest.get_modpath("snow")
+
+if mod_building_blocks then 
 minetest.register_node("trail:snow_walked", {
 	tiles = {"trail_snow_footprint.png", "snow_snow.png"},
 	drawtype = "nodebox",
@@ -158,6 +162,7 @@ minetest.register_node("trail:snow_block_walked", {
 		footstep = {name="default_gravel_footstep", gain=0.3},
 	}),
 })
+end
 
 minetest.register_node("trail:wheat_walked", {
 	description = "Flattened Wheat",
