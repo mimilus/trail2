@@ -170,7 +170,7 @@ minetest.register_node("trail:wheat_walked", {
 	sunlight_propagates = true,
 	paramtype = "light",
 	paramtype2 = "facedir",
-	groups = {snappy=3,flammable=2,plant=1,attached_node=1},
+	groups = {snappy=3,flammable=2,plant=1,attached_node=1, not_in_creative_inventory=1},
 	buildable_to = true,
 	drop = "",
 	node_box = {
